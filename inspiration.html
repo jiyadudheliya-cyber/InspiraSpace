@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inspiration | InspiraSpace</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="inspiration">
+  <header class="site-header">
+    <a class="logo" href="index.html">Inspira<span>Space</span></a>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a><a href="inspiration.html">Inspiration</a><a href="materials.html">Materials</a><a href="blog.html">Blog</a><a href="saved.html">Saved</a><a href="about.html">About</a>
+      <button class="theme-btn" id="themeBtn">🌙</button><a class="nav-login" href="login.html" id="loginLink">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">DISCOVER YOUR STYLE</p>
+      <h1>Interior inspiration</h1>
+      <p>Browse ideas by room and style. Save the ones you love.</p>
+    </section>
+
+    <section class="section">
+      <div class="filter-box">
+        <input type="search" id="searchInput" placeholder="Search living room, modern, wood...">
+        <select id="roomFilter">
+          <option value="All">All Rooms</option><option>Living Room</option><option>Bedroom</option><option>Kitchen</option><option>Bathroom</option><option>Office</option>
+        </select>
+        <select id="styleFilter">
+          <option value="All">All Styles</option><option>Modern</option><option>Minimal</option><option>Luxury</option><option>Warm</option><option>Natural</option>
+        </select>
+      </div>
+      <div class="filter-pills" id="filterPills">
+        <button class="pill active" data-room="All">All</button><button class="pill" data-room="Living Room">Living Room</button><button class="pill" data-room="Bedroom">Bedroom</button><button class="pill" data-room="Kitchen">Kitchen</button><button class="pill" data-room="Bathroom">Bathroom</button><button class="pill" data-room="Office">Office</button>
+      </div>
+      <div class="inspiration-grid" id="inspirationGrid"></div>
+      <p class="empty-state hidden" id="noResults">No inspiration found. Try another search or category.</p>
+    </section>
+  </main>
+
+  <footer id="siteFooter"></footer>
+  <div id="toast" class="toast"></div>
+  <script src="js/main.js"></script>
+  <script src="js/inspiration.js"></script>
+</body>
+</html>

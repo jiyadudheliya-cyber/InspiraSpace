@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InspiraSpace | Interior Design Inspiration</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <a class="logo" href="index.html">Inspira<span>Space</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="inspiration.html">Inspiration</a>
+      <a href="materials.html">Materials</a>
+      <a href="blog.html">Blog</a>
+      <a href="saved.html">Saved</a>
+      <a href="about.html">About</a>
+      <button class="theme-btn" id="themeBtn" title="Toggle dark mode">🌙</button>
+      <a class="nav-login" href="login.html" id="loginLink">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">INTERIOR DESIGN • IDEAS • MATERIALS</p>
+        <h1>Design a space that feels like <em>home.</em></h1>
+        <p>Discover beautiful interiors, useful material ideas and simple design inspiration for every room.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-dark" href="inspiration.html">Explore Inspiration</a>
+          <a class="btn btn-light" href="blog.html">Read Our Blogs</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EXPLORE</p>
+          <h2>Find ideas by room</h2>
+        </div>
+        <a class="text-link" href="inspiration.html">View all →</a>
+      </div>
+
+      <div class="room-grid">
+        <a class="room-card" href="inspiration.html?room=Living%20Room">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Modern living room">
+          <div><span>01</span><h3>Living Room</h3></div>
+        </a>
+        <a class="room-card" href="inspiration.html?room=Bedroom">
+          <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=900&q=80" alt="Modern bedroom">
+          <div><span>02</span><h3>Bedroom</h3></div>
+        </a>
+        <a class="room-card" href="inspiration.html?room=Kitchen">
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="Modern kitchen">
+          <div><span>03</span><h3>Kitchen</h3></div>
+        </a>
+        <a class="room-card" href="inspiration.html?room=Office">
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Modern office">
+          <div><span>04</span><h3>Office</h3></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section soft-bg">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">TRENDING NOW</p>
+          <h2>Interior inspiration</h2>
+        </div>
+        <a class="text-link" href="inspiration.html">Explore all →</a>
+      </div>
+      <div class="mini-grid" id="homeCards"></div>
+    </section>
+
+    <section class="quote-section">
+      <div>
+        <p class="eyebrow">OUR PHILOSOPHY</p>
+        <h2>Good design is not about filling a room. It is about making a room feel right.</h2>
+      </div>
+      <a class="btn btn-dark" href="about.html">Know More</a>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FROM THE BLOG</p>
+          <h2>Fresh design stories</h2>
+        </div>
+        <a class="text-link" href="blog.html">Read all →</a>
+      </div>
+      <div class="blog-grid">
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80" alt="Interior styling">
+          <div><p class="eyebrow">STYLE</p><h3>10 modern living room ideas</h3><p>Simple ways to make your living space feel warm, balanced and modern.</p><a href="blog.html" class="text-link">Read article →</a></div>
+        </article>
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Interior materials">
+          <div><p class="eyebrow">MATERIALS</p><h3>How to choose the right flooring</h3><p>Compare wood, stone, tiles and other popular flooring choices.</p><a href="blog.html" class="text-link">Read article →</a></div>
+        </article>
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="Small bedroom">
+          <div><p class="eyebrow">BEDROOM</p><h3>Make a small bedroom feel bigger</h3><p>Smart layouts, light colours and storage ideas for compact rooms.</p><a href="blog.html" class="text-link">Read article →</a></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="siteFooter"></footer>
+  <div id="toast" class="toast"></div>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
